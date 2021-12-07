@@ -19,7 +19,19 @@ class CalcFragment : Fragment() {
         binding = CalcFragmentBinding.inflate(inflater)
         viewModel = ViewModelProvider(this)[CalcViewModel::class.java]
         setupButtons()
+        setupViews()
         return binding.root
+    }
+
+    override fun onResume() {
+        super.onResume()
+        viewModel
+    }
+
+    private fun setupViews() = with(binding) {
+        viewModel.calcNum.observe(viewLifecycleOwner) {
+            txtCalc.text = it
+        }
     }
 
     private fun setupButtons() = with(binding) {
