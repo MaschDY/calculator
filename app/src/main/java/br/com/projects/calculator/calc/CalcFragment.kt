@@ -36,55 +36,55 @@ class CalcFragment : Fragment() {
 
     private fun setupButtons() = with(binding) {
         btnC.setOnClickListener {
-            viewModel.cleanup(txtCalc.text.toString(), btnC.text.toString())
+            viewModel.cleanup(btnC.text.toString())
         }
 
         btnAC.setOnClickListener {
-            viewModel.cleanup(txtCalc.text.toString(), btnAC.text.toString())
+            viewModel.cleanup(btnAC.text.toString())
         }
 
         btnPlus.setOnClickListener {
-//            TODO(): viewModel.(txtCalc.text.toString(), btnPlus.text.toString())
+//            TODO(): viewModel.( btnPlus.text.toString())
         }
 
         btnSeven.setOnClickListener {
-            viewModel.setCalcNumber(txtCalc.text.toString(), btnSeven.text.toString())
+            viewModel.setCalcNumber(btnSeven.text.toString())
         }
 
         btnEight.setOnClickListener {
-            viewModel.setCalcNumber(txtCalc.text.toString(), btnEight.text.toString())
+            viewModel.setCalcNumber(btnEight.text.toString())
         }
 
         btnNine.setOnClickListener {
-            viewModel.setCalcNumber(txtCalc.text.toString(), btnNine.text.toString())
+            viewModel.setCalcNumber(btnNine.text.toString())
         }
 
         btnFour.setOnClickListener {
-            viewModel.setCalcNumber(txtCalc.text.toString(), btnFour.text.toString())
+            viewModel.setCalcNumber(btnFour.text.toString())
         }
 
         btnFive.setOnClickListener {
-            viewModel.setCalcNumber(txtCalc.text.toString(), btnFive.text.toString())
+            viewModel.setCalcNumber(btnFive.text.toString())
         }
 
         btnSix.setOnClickListener {
-            viewModel.setCalcNumber(txtCalc.text.toString(), btnSix.text.toString())
+            viewModel.setCalcNumber(btnSix.text.toString())
         }
 
         btnOne.setOnClickListener {
-            viewModel.setCalcNumber(txtCalc.text.toString(), btnOne.text.toString())
+            viewModel.setCalcNumber(btnOne.text.toString())
         }
 
         btnTwo.setOnClickListener {
-            viewModel.setCalcNumber(txtCalc.text.toString(), btnTwo.text.toString())
+            viewModel.setCalcNumber(btnTwo.text.toString())
         }
 
         btnThree.setOnClickListener {
-            viewModel.setCalcNumber(txtCalc.text.toString(), btnThree.text.toString())
+            viewModel.setCalcNumber(btnThree.text.toString())
         }
 
         btnZero.setOnClickListener {
-            viewModel.setCalcNumber(txtCalc.text.toString(), btnZero.text.toString())
+            viewModel.setCalcNumber(btnZero.text.toString())
         }
     }
 }

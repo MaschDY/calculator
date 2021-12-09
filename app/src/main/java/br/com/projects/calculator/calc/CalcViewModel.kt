@@ -17,12 +17,12 @@ class CalcViewModel : ViewModel() {
         else _calcNum.value = _actualCalcNum + btnNum
     }
 
-    fun cleanup(actualCalcNum: String, btnAction: String) {
+    fun cleanup(btnAction: String) {
         if (btnAction == "C") {
             when {
-                actualCalcNum == "0" -> _calcNum.value = actualCalcNum
-                actualCalcNum.length <= 1 -> _calcNum.value = "0"
-                else -> _calcNum.value = actualCalcNum.dropLast(1)
+                _actualCalcNum == "0" -> _calcNum.value = _actualCalcNum
+                _actualCalcNum.length <= 1 -> _calcNum.value = "0"
+                else -> _calcNum.value = _actualCalcNum.dropLast(1)
             }
         } else _calcNum.value = "0"
     }
